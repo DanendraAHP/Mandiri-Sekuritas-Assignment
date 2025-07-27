@@ -1,0 +1,10 @@
+lightgbm==4.6.0
+mlflow==3.1.4
+mlflow_skinny==3.1.4
+more_itertools==10.7.0
+numpy==2.3.2
+pandas==2.3.1
+scikit_learn==1.7.1
+statsmodels==0.14.5
+xgboost==3.0.2
+yfinance==0.2.65
