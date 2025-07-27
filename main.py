@@ -10,7 +10,7 @@ import warnings
 warnings.filterwarnings('ignore')  # Suppress ARIMA convergence warnings
 
 def train_eval_model():
-    setup_mlflow_experiment("BBCA Stock Forecast", tracking_uri="http://localhost:8080")
+    setup_mlflow_experiment(MLFLOW_EXPERIMENT_NAME, tracking_uri=MLFLOW_URI)
     data = pd.read_csv(DATA_PATH)
     col_combination = create_incremental_combinations(USED_COLUMNS)
     

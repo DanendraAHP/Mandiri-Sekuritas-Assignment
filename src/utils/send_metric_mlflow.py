@@ -98,7 +98,19 @@ def execute_hyperparameter_tuning(
     models_list=None
 ):
     """
-    Same as your existing function but with column-aware run names.
+    Execute hyperparameter tuning and log experiments to MLflow.
+    
+    Args:
+        model_name (str): Name for the MLflow experiment
+        hyperparams_list (list): List of hyperparameter dictionaries
+        metrics_list (list): List of metrics dictionaries from evaluate_model()
+        test_identifier (str, optional): Additional identifier for run names
+        models_list (list, optional): List of trained model objects to log
+        
+    Example:
+        >>> hyperparams = [{"window": 5}, {"window": 10}]
+        >>> metrics = [{"rmse": 200.5, "mae": 150.3, "r2": 0.8, "mape": 3.2}]
+        >>> execute_hyperparameter_tuning("Baseline_Models", hyperparams, metrics)
     """
     ident = "default" if not test_identifier else test_identifier
     

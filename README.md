@@ -244,11 +244,15 @@ The following screenshots demonstrate the MLOps integration and experiment track
 ![Sorted Runs by RMSE](mlflow_screenshots/Sorted%20Run%20by%20RMSE.png)
 *Experiments sorted by RMSE performance metric, clearly demonstrating the superior performance of the regression model compared to the baseline model.*
 
-### 3. Best Model Artifacts
+### 3. Baseline Model
+![Baseline Model](mlflow_screenshots/Baseline%20Model.png)
+*Baseline model performance*
+
+### 4. Best Model Artifacts
 ![Best Run Artifacts](mlflow_screenshots/Best%20Run%20Artifact.png)
 *Detailed view of logged artifacts for the best performing model, including model files, preprocessing pipelines, performance visualizations, and feature importance plots.*
 
-### 4. Model Registry
+### 5. Model Registry
 ![Model Registry](mlflow_screenshots/Model%20Registry.png)
 *Model management dashboard showing registered models with versions, stages, and metadata for production-ready model deployment.*
 
